@@ -758,7 +758,12 @@ ul.nav.nav-tabs a:focus:hover{
     text-align: center;
     margin: 0 auto;
 }
-
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #gallery #featured{
+            width: 100%;
+        }
+    }
 /** Sponsors **/
 .sponsors{
     background: rgba(0,0,0,.04);
@@ -767,20 +772,17 @@ ul.nav.nav-tabs a:focus:hover{
 .sponsors h1{
     margin-bottom: 25px;
 }
-.sponsors div[class^='col-sm'], div[class*='col-sm'] img{
-    max-width: 100%;
+.sponsors .sp{
+    margin: auto;
+}
+.sponsors .sp img{
+    width: 100%;
     margin-bottom: 5px;
 }
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-        .sponsors .row{
-            padding-left: 30%;
-        }
-    }
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
-        .sponsors .row{
-            padding-left: 20%;
+        .sponsors .sp{
+            width: 60%;
         }
     }
 /** Contact Us **/
@@ -857,7 +859,7 @@ ul.nav.nav-tabs a:focus:hover{
 
 #map{
     overflow:hidden;
-    height:440px;
+    height:340px;
     width:100%;
 }
 
