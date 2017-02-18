@@ -760,7 +760,30 @@
                <div class="row no-pad">
                 <div class="col-sm-6">
                     <div id="map">
-                         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:100%;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(28.5906768,77.23100599999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.5906768,77.23100599999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Priyadarshani 2017</strong><br>Dyal Singh College<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    <script>
+                      function initMap() {
+                        var uluru = {lat: 28.5906768, lng: 77.23100599999998};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 15,
+                          center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                          position: uluru,
+                          map: map,
+                        title:"Priyadarshani 2017"
+                        });
+
+                      }
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlCgFPTewtXo2S_a2iLXgZ600DicsqMh8&callback=initMap">
+                    </script>
+
+                    <!--
+
+                     MAP
+                       -->
+
                     </div><!-- map -->
                 </div>
                 <div class="col-sm-6">

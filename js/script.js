@@ -74,18 +74,19 @@ $(function(){
     });
     
     // Map 
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    
+//                      function initMap() {
+//                        var uluru = {lat: 28.5906768, lng: 77.23100599999998};
+//                        var map = new google.maps.Map(document.getElementById('map'), {
+//                          zoom: 15,
+//                          center: uluru
+//                        });
+//                        var marker = new google.maps.Marker({
+//                          position: uluru,
+//                          map: map,
+//                        title:"Priyadarshani 2017"
+//                        });
+//
+//                      }
    
     // Schedule
     $('#myTabs a').click(function (e) {

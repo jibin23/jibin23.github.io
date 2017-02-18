@@ -855,6 +855,12 @@ ul.nav.nav-tabs a:focus:hover{
     padding: 40px 0;
 }
 
+#map{
+    overflow:hidden;
+    height:440px;
+    width:100%;
+}
+
 /** Footer **/
 footer {
     /* background: rgba(0,0,0,.03); */
