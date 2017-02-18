@@ -1,0 +1,879 @@
+body{
+    font-family: 'Source Sans Pro';
+    position: relative;
+    background: #f7f7f7;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Custom Helper Class */
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0 !important;
+  padding-left:0 !important;
+}
+
+/* Equal Heights of rows using flex box 
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/** Typography **/
+.slate-heading{
+    color: #ff3c62;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    font-size: 4em;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+
+/** Header Navigation **/
+
+/* Navbar brand */
+header .navbar-brand{
+    background: url(../img/logo/p_logo_deploy.png);
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 25px;
+    margin-top: 10px;
+    display: inline-block;
+    background-size: 90%;
+}
+
+/* Navbar Toggle & Collapse */
+header .navbar-toggle{
+    margin: 15px;
+    padding: 12px;
+    background: transparent;
+    border: 0px;
+    transition: all .2s;
+}
+header .navbar-toggle:hover,
+header .navbar-toggle:focus{
+    background: rgba(0,0,0,.2) !important; 
+}
+header .navbar-default .navbar-toggle .icon-bar{
+    background: #ff3c62;
+}
+header .navbar-default .navbar-toggle:hover .icon-bar{
+    background: white;
+}
+header .collapsing{
+    background: #ebebeb;
+}
+header .navbar-collapse.in{
+    background: #ebebeb;
+}
+
+
+/** Generic Navigation Styles **/
+header .navbar{
+    border-radius: 0;
+    border: 0;    
+}
+
+header .navbar-default{
+    background-color: transparent;
+    transition: all .4s;
+}
+
+header .navbar-default .navbar-nav a{
+    color: #919090;
+    font-weight: 900;
+    padding: 20px 22px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all .1s;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+    color: #919090;
+    background: inherit;   
+}
+
+header .navbar-default .navbar-nav a:hover{
+    color: #ff3c62;
+    border-bottom: 3px solid #ff3c62;
+}
+
+header .navbar-default .navbar-nav > .active > a{
+    color: white;
+    background: #ff3c62;
+}
+header .navbar-default .navbar-nav>.active>a:focus{
+    color: white !important;
+    background: #ff3c62 !important;
+}
+header .navbar-default .navbar-nav>.active>a:hover{
+    color: white !important;
+    background: #ff3c62 !important;   
+}
+
+header .navbar-default .navbar-nav a[href="#home"]{
+    display: none;
+}
+.navbar{
+    border-radius: 0;
+    border:0;
+}
+
+/* change in style of navigation */
+header .navbar-default{
+  border-bottom: 1px solid transparent;  
+}
+header .navbar-default .navbar-nav a{
+    transition: all .3s;
+}
+header .inbody{
+    background: #ebebeb;
+    border-bottom: 1px solid rgba(0,0,0,.03);
+}
+header .navbar-default .navbar-brand{
+    transition: all .3s;
+}
+header .inbody .navbar-brand{
+    padding: 22px;
+    margin-top: 7px;
+}
+header .inbody .navbar-nav a{
+    padding: 15px 20px;
+}
+   /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        header .navbar-brand{
+            background-size: 75%;
+            margin-top: 15px;
+            margin-left: 27px;
+        }
+        
+        header .inbody .navbar-brand{
+            margin-top: 17px;
+            background-size: 75%;
+        }
+        
+    }
+
+
+/** Main Content **/
+.main{
+    padding: 20px 15px 72px 15px;
+    padding-top: 40px;
+    height: 100%;
+}
+
+/** HomePage **/
+.home{
+    background: #333;
+    height: 100vh;
+    padding-top: 160px;
+    position: relative;
+}
+.home .fest-header{
+    position: relative;
+    _display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.home img{
+    width: 30%;
+    margin: 0 20%;
+    display: none;
+}
+.home .fest-header h1{
+    _text-shadow: 0 2px 2px rgba(0,0,0,.9);
+    _box-shadow: 0 2px 2px rgba(0,0,0,.9); 
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #ff3c62;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    font-size: 5em;
+    border: 5px solid #ff3c62;
+    display: inline-block;
+    padding: 10px 35px;
+    position: relative;
+}
+.home .fest-header h1 span{
+    position: absolute;
+    right: -20%;
+    top: 80%;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 35px;
+    background: transparent;
+    border: 5px solid white;
+    font-size: .8em;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    
+}
+
+    @media only screen and (max-width : 992px) {
+        .home .fest-header h1{
+            font-size: 4em;
+        }
+        .home .fest-header h1 span{
+            font-size: .6em;
+            right: -15%;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .home .fest-header h1{
+            font-size: 3.7em;
+        }
+        .home .fest-header h1 span{
+            font-size: .6em;
+            right: -7%;
+            top: 80%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .home .fest-header h1{
+            font-size: 2.2em;
+            padding: 5px 15px;
+        }
+        .home .fest-header h1 span{
+            font-size: .6em;
+            padding: 5px 15px;
+            right: -4%;
+            top: 83%;
+        }
+    }
+
+.down{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    display: block;
+    width: 120px;
+    height: 80px;
+    margin:0 auto;
+    _margin-top: 240px;
+    background: url('../img/Rave_small.png') no-repeat;
+    background-size: 100%; 
+}
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .down{
+            left: 35%;
+        }
+    }
+
+/** About **/
+.about{
+    height: 100%;
+    background: #ebebeb;
+    padding: 60px 0;
+}
+.about h1{
+    margin-top: 0;
+}
+.about p{
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    line-height: 1.7em
+}
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/** Events **/
+.event-cell{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    color: black;
+    display: block;
+    
+    padding: 10px;
+    padding-bottom: 20px;
+    background: white;
+    margin-bottom: 15px;
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,.04);
+    
+    transition: all .1s;
+}
+
+.event-cell h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 2.2em;
+}
+.event-cell h4{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    margin-top: -4px;
+    letter-spacing: -1px;
+}
+
+.event-cell{
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+}
+.event-cell .mug{
+    width: 32%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    
+    transition: all .2s;
+}
+.event-cell .mug img{
+    max-width: 100%;
+
+    position: absolute;
+    _transition: all .1s;
+}
+.event-cell .mug img:nth-child(2){
+    opacity: 0;
+}
+
+.event-cell:hover{
+    text-decoration: none;
+    color: white;
+    background: #ff3c62;   
+}
+.event-cell:hover .mug{
+    transform: translateX(10px);
+}
+.event-cell:hover .mug img:nth-child(2){
+    opacity: 1;
+}
+.event-cell:hover .mug img:nth-child(1){
+    opacity: 0;
+}
+
+.event-cell:focus{
+    text-decoration: none; 
+    color: black;
+}
+.event-cell:focus:hover{
+    color: white;
+
+}
+
+/*** Modals ***/
+.event-modals .modal-body{
+    padding: 0;
+}
+.modal-large{
+    width: 100%;
+/*
+    margin: auto;
+    background: #444;
+*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-modals .modal-content{
+    width: 75%;
+
+}
+
+.event-modals .modal-content{
+    background: #ebebeb;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.event-modals .subevents{
+    list-style: none;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+}
+.event-modals .subevents li{
+    display: inline-block;
+    color: #222;
+    text-align: left;
+    width: 48%;
+    height: 100px;
+    padding: 10px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 1.8em;
+    _background: rgba(0,0,0,.02);
+    border: 1px solid rgba(0,0,0,.08);
+    transition: all .3s;
+}
+.event-modals .subevents li:hover{
+    color: #222;
+    
+}
+.event-modals .subevents li span{
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .6em;
+    line-height: 1.2em;
+    margin-top: -5px;
+    letter-spacing: 0px;
+    color: #666;
+}
+.event-modals .dets{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: white;
+    background: #ff3c62; 
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    outline: 0;
+    border: 0;
+}
+.event-modals .dets:hover{
+    text-decoration: none;
+}
+.event-modals .dets span{
+    margin-left: 0px;
+    opacity: 0;
+    transition: all .2s;
+}
+.event-modals .dets:hover span{
+    margin-left: 5px;
+    opacity: 1;
+}
+.event-modals .image-peak{
+    padding: 15px;
+    border-left: 1px solid rgba(0,0,0,.02); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.event-modals .image-peak img{
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    _border: 4px solid #555;
+}
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .event-modals .subevents{
+            padding: 10px;
+        }
+        .event-modals .subevents li{
+            display: block;
+            width: 100%;
+            height: auto;
+            font-size: 1.6em;
+        }
+        
+        .event-modals .modal-content{
+            width: 90%;
+            margin-left: -5%;
+        }
+        
+        .event-modals .subevents{
+            _width: 50%;
+            
+        }
+        
+        .event-modals .image-peak img{
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+/** Battle of Bands **/
+#battleofbands{
+    padding-top: 40px;
+    height: 100%;
+    background: url("../img/one (1).jpg") no-repeat;
+    background-position: 60% 40%;
+    -background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid rgba(0,0,0,.06);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+
+    position: relative;
+}
+
+.bob-info {
+    margin-left: 33%;
+    width: 75%;
+}
+.bob-text{
+    background: rgba(255,255,255,1.5);
+    box-shadow: 2px 6px 4px rgba(0,0,0,.08);
+    border: 1px solid rgba(0,0,0,.02);
+    padding: 40px 60px;
+    color: #000000;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 40px;
+}
+.bob-text h1{
+    text-align: center;
+    text-shadow: 0 4px #d02b4b;
+}
+.bob-text blockquote{
+    background: white;
+    line-height: 1.6em;
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,.02);
+    padding: 10px;
+}
+.bob-text span.title{
+    background: #ff3c62;
+    color: white;
+    /* font-weight: 900; */
+    padding: 2px 10px;
+}
+.bob-text span.black{
+    background: white;
+    color: black;
+    text-shadow: 0 1px 1px rgba(0,0,0,.09);
+    font-weight: 900;
+    padding: 2px 4px;
+    border-bottom: 2px solid black;
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #battleofbands{
+            background-position: 34% 40%;
+        }
+        .bob-info {
+            margin-left: 26%;
+        }
+        .bob-text {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+        .bob-text blockquote{
+            font-size: 1em;
+        }
+        .bob-text h1{
+            font-size: 3.2em !important; 
+            line-height: 1em;
+        }
+    }
+
+/** Starnight **/
+#starnight, #gallery, #team{
+    height: 100%;
+}
+#starnight{
+   background: #fbfbfb; 
+}
+#starnight .bob-info {
+    margin-left: -7%;
+    width: 75%;
+}
+   /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #starnight{
+            background-position: 34% 40%;
+        }
+        #starnight .bob-info {
+            margin-left: 2%;
+        }
+        #starnight .bob-text {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+        #starnight .bob-text h1{
+            font-size: 3.2em !important; 
+            line-height: 1em;
+        }
+    }
+
+/** Schedule **/
+#schedule{
+    border-top: 1px solid rgba(0,0,0,.06);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    background: white;
+    padding: 40px 15px 72px 15px;
+}
+#schedule .tab-content{
+    width: 50%;
+    margin:0 auto;
+    text-align: center;    
+}
+#schedule .tab-content img{
+    width:100%;
+}
+
+ul.nav.nav-tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+}
+ul.nav.nav-tabs a{
+    background: none;
+    border: 1px solid transparent;
+    color: #999;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    
+    transition:all .4s; 
+}
+ul.nav.nav-tabs a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+ul.nav.nav-tabs a:focus{
+    border-bottom: 2px solid black;
+}
+ul.nav.nav-tabs a:focus:hover{
+    border-bottom: 2px solid black;
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #schedule .tab-content{
+            width: 100%;
+            margin:0 auto;
+            text-align: center;    
+        }
+        ul.nav.nav-tabs a{
+            font-size: 1em;
+        }
+    }
+/** Team **/
+#team{
+    border-top: 1px solid rgba(0,0,0,.06);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+#team .member{
+    background: rgba(0,0,0,.02);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 20px auto;
+}
+#team .member img{
+    width: 100%;   
+}
+#team .member .member-info{
+    background: white;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.08);
+    padding: 10px !important;
+    margin: 10px;
+    text-align: center;
+}
+#team .member .member-info h4{
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#team .member .member-info h4 span{
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: #999;
+    font-size: .8em;
+}
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #team .member{
+            width: 60%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        #team .member{
+            width: 70%;
+        }
+    }
+/** Gallery **/
+#gallery{
+    padding: 40px 0;
+}
+#gallery #featured{
+    width: 60%;
+    overflow: hidden;
+    margin:0 auto;   
+}
+#gallery .carousel-inner{
+
+}
+#gallery .carousel img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/** Sponsors **/
+.sponsors{
+    background: rgba(0,0,0,.04);
+    padding-top: 40px;
+}
+.sponsors h1{
+    margin-bottom: 25px;
+}
+.sponsors div[class^='col-sm'], div[class*='col-sm'] img{
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .sponsors .row{
+            padding-left: 30%;
+        }
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .sponsors .row{
+            padding-left: 20%;
+        }
+    }
+/** Contact Us **/
+.in-touch{
+    background: white;
+    padding: 10px;
+    box-shadow: 0 7px 2px rgba(0,0,0,.09);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.contact .details{
+    background: white;
+    padding: 20px 10px;
+    height: 100%;
+}
+.contact .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact .info .fa{
+    font-size: 2.8em;
+    margin-right: 5px;
+    color: #ff3c62;
+    padding: 5px;
+}
+.contact .info a{
+    display: inline-block;
+    color: #333;
+    font-size: 1.1em;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    
+    transition: all .2s;
+}
+.contact .info a:hover{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #333;
+}
+.contact .info .info-data{
+    font-size: 1.1em;
+}
+.social ul{
+    text-align: center;
+    _width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.social li{
+   display: inline-block; 
+}
+.social li a{
+    display: block;
+    padding: 10px 18px;
+    font-size: 2em;
+    color: white;
+    background: #ff3c62;
+    
+    transition: all .1s;
+}
+.social li a:hover{
+    color: #ff3c62;
+    background: transparent;
+}
+.dummy{
+    max-width: 100%;
+}
+
+
+.events, #starnight, #sponsors, #team, #contactus{
+    padding: 40px 0;
+}
+
+/** Footer **/
+footer {
+    /* background: rgba(0,0,0,.03); */
+    height: 100%;
+    padding-top: 10px;
+    text-align: right;
+    border-top: 1px solid rgba(0,0,0,.04);
+    color: #737373;
+}
+footer a{
+    color: #737373;
+    padding: 4px;
+    border-bottom: 1px solid #737373;
+
+    transition: all .1s;
+}
+footer a:hover{
+    text-decoration:none;
+    background: #ff3c62;
+    border-bottom: 1px solid #ff3c62;
+    color: white;
+}
